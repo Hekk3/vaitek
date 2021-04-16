@@ -152,48 +152,6 @@ $(function(){
 // End mask plagin
 
 
-// hover menu
-
-const hoverMenu = document.querySelectorAll('.main-catalog__bottom-dropmenu-container');
-const hoverBtn = document.querySelectorAll('.main-catalog__bottom-menu .main-catalog__bottom-text');
-
-
-function hoverMenuDel() {
-  for (let i = 0; i < hoverMenu.length; i++) {
-    hoverMenu[i].classList.remove('main-catalog__bottom-dropmenu-container--active')
-  }
-}
-
-
-for (let i = 0; i < hoverBtn.length; i++) {
-  hoverBtn[i].addEventListener('mouseenter', function() {
-    hoverMenuDel()
-    hoverMenu[i].classList.add('main-catalog__bottom-dropmenu-container--active');
-  })
-}
-
-for (let i = 0; i < hoverBtn.length; i++) {
-  hoverBtn[i].addEventListener('mouseleave', function() {
-      hoverMenu[i].classList.remove('main-catalog__bottom-dropmenu-container--active');
-  })
-}
-
-for (let i = 0; i < hoverMenu.length; i++) {
-  hoverMenu[i].addEventListener('mouseenter', function() {
-    hoverMenuDel()
-    hoverMenu[i].classList.add('main-catalog__bottom-dropmenu-container--active');
-  })
-}
-
-for (let i = 0; i < hoverMenu.length; i++) {
-  hoverMenu[i].addEventListener('mouseleave', function() {
-    hoverMenu[i].classList.remove('main-catalog__bottom-dropmenu-container--active');
-  })
-}
-
-// End hover menu
-
-
 // validate form
 
 
@@ -327,12 +285,18 @@ modalDark.addEventListener('click', function(e) {
 
 const mainCatalogIs = document.querySelector('.main-catalog__list');
 
+
 if (window.innerWidth <= 768 && mainCatalogIs) {
   $(function() {
     $('.main-catalog__list').selectric();
   });
 }
 
+if (mainCatalogIs) {
+  $(function() {
+    $('.main-catalog_selectric').selectric();
+  });
+}
 
 //  End menu catalog
 
@@ -368,3 +332,40 @@ if (cta) {
 }
 
 // End validate cta
+
+
+// cookie
+
+window.onload = function() {
+  const cookie = document.querySelector('.cookie-message');
+  const cookieClose = document.querySelector('.cookie-message__close');
+
+  cookie.classList.add('cookie-message_open');
+
+  cookieClose.addEventListener('click', function() {
+    cookie.classList.remove('cookie-message_open');
+  });
+};
+
+// End cookie
+
+
+// catalog slider like checkbox
+
+const likeCheckboxItems = document.querySelectorAll('.main-catalog__slider-item');
+const likeCheckboxClose = document.querySelectorAll('.main-catalog__slider-img');
+
+for (let i = 0; i < likeCheckboxItems.length; i++) {
+  likeCheckboxItems[i].addEventListener('click', function(e){
+    if (e.target == likeCheckboxClose[i]) return;
+    likeCheckboxItems[i].classList.toggle('main-catalog__slider-item--current');
+  });
+}
+
+for (let i = 0; i < likeCheckboxClose.length; i++) {
+  likeCheckboxClose[i].addEventListener('click', function(){
+    likeCheckboxItems[i].classList.remove('main-catalog__slider-item--current');
+  });
+}
+
+// End catalog slider like checkbox
