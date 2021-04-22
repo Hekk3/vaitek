@@ -27,8 +27,8 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.3/swiper-bundle.js" integrity="sha512-di2ta1yM8mzG9zh3m2tSQl08ekFu7deY0J9Sq364mSluvmQjPQm13rFMPcoPouWhyrQ8JlZnuRFJjRBrobjZMg==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.3/swiper-bundle.min.css"
@@ -263,7 +263,7 @@
         </div>
       </div>
     </div>
-    <div class="catalog">
+    <section class="catalog-slider">
       <div class="container">
         <div class="catalog__heading">
           <h2 uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">Каталог</h2>
@@ -280,42 +280,44 @@
             </div>
           </div>
         </div>
-        <div class="catalog-swiper swiper-container">
-          <div class="catalog-blok swiper-wrapper" uk-scrollspy="cls: uk-animation-fade; target: a; delay: 300;  repeat: false">
-            <a href="" class="catalog-blok-item-1 swiper-slide">
-              <div class="catalog-blok-item">
-                <img src="img/catalog_1.png" srcset="img/catalog_1_2x.png 2x" alt="" />
-                <p>Технологическое оборудование</p>
-              </div>
-            </a>
-            <a href="" class="catalog-blok-item-1 swiper-slide">
-              <div class="catalog-blok-item">
-                <img src="img/catalog_2.png" srcset="img/catalog_2_2x.png 2x" alt="" />
-                <p>Холодильное оборудование</p>
-              </div>
-            </a>
-            <a href="" class="catalog-blok-item-1 swiper-slide">
-              <div class="catalog-blok-item">
-                <img src="img/catalog_3.png" srcset="img/catalog_3_2x.png 2x" alt="" />
-                <p>Посуда и инвентарь</p>
-              </div>
-            </a>
-            <a href="" class="catalog-blok-item-1 swiper-slide">
-              <div class="catalog-blok-item">
-                <img src="img/catalog_4.png" srcset="img/catalog_4_2x.png 2x" alt="" />
-                <p>Запасные части для оборудования</p>
-              </div>
-            </a>
-            <a href="" class="catalog-blok-item-2 swiper-slide">
-              <div class="catalog-blok-item">
-                <img src="img/catalog_5.png" srcset="img/catalog_5_2x.png 2x" alt="" />
-                <p>Сервисные услуги</p>
-              </div>
-            </a>
+        <div class="catalog-slider__slider catalog-blok">
+          <div class="catalog-slider__slider-block swiper-container">
+            <ul class="catalog-slider__slider-wrapper swiper-wrapper">
+              <a href="" class="catalog-blok-item-1 swiper-slide">
+                <div class="catalog-blok-item">
+                  <img src="img/catalog_1.png" srcset="img/catalog_1_2x.png 2x" alt="" />
+                  <p>Технологическое оборудование</p>
+                </div>
+              </a>
+              <a href="" class="catalog-blok-item-1 swiper-slide">
+                <div class="catalog-blok-item">
+                  <img src="img/catalog_2.png" srcset="img/catalog_2_2x.png 2x" alt="" />
+                  <p>Холодильное оборудование</p>
+                </div>
+              </a>
+              <a href="" class="catalog-blok-item-1 swiper-slide">
+                <div class="catalog-blok-item">
+                  <img src="img/catalog_3.png" srcset="img/catalog_3_2x.png 2x" alt="" />
+                  <p>Посуда и инвентарь</p>
+                </div>
+              </a>
+              <a href="" class="catalog-blok-item-1 swiper-slide">
+                <div class="catalog-blok-item">
+                  <img src="img/catalog_4.png" srcset="img/catalog_4_2x.png 2x" alt="" />
+                  <p>Запасные части для оборудования</p>
+                </div>
+              </a>
+              <a href="" class="catalog-blok-item-2 swiper-slide">
+                <div class="catalog-blok-item">
+                  <img src="img/catalog_5.png" srcset="img/catalog_5_2x.png 2x" alt="" />
+                  <p>Сервисные услуги</p>
+                </div>
+              </a>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="our_projects">
       <h2 uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false">Наши проекты</h2>
       <div class="container">

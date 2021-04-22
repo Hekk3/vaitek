@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Вайтек | Комплексное оснащение ресторанов,баров,кафе и магазинов</title>
+
+    <!-- fonts -->
+    <!-- ===== -->
     <link rel="stylesheet" href="fonts/roboto.css">
+    <!-- End fonts -->
+    <!-- ========= -->
+
+    <!-- plagins, css -->
+    <!-- ============ -->
+    <link rel="stylesheet" href="css/pages/perfect-scrollbar.css">
     <link rel="stylesheet" href="css/pages/selectric.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
     <link rel="stylesheet" type="text/css" href="css/pages/main.css" />
+    <!-- End plagins, css -->
+    <!-- ================ -->
+
+    <!-- icons -->
+    <!-- ===== -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png" />
@@ -26,6 +40,9 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+    <!-- End icons  -->
+    <!-- =========  -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -306,39 +323,39 @@
             </li>
           </ul>
           <div class="main-catalog__slider">
-            <div class="main-catalog__slider-container swiper-container">
-              <ul class="main-catalog__slider-list swiper-wrapper">
-                <li class="main-catalog__slider-item swiper-slide">
+            <div class="main-catalog__slider-container">
+              <ul class="main-catalog__slider-list">
+                <li class="main-catalog__slider-item">
                   <a class="main-catalog__slider-link">
                     <img src="img/catalog-slider-svg-close.svg" alt="" class="main-catalog__slider-img">
                     <span class="main-catalog__slider-text">Барное оборудование</span>
                   </a>
                 </li>
-                <li class="main-catalog__slider-item swiper-slide">
+                <li class="main-catalog__slider-item">
                   <a class="main-catalog__slider-link">
                     <img src="img/catalog-slider-svg-close.svg" alt="" class="main-catalog__slider-img">
                     <span class="main-catalog__slider-text">Весовое оборудование</span>
                   </a>
                 </li>
-                <li class="main-catalog__slider-item swiper-slide">
+                <li class="main-catalog__slider-item">
                   <a class="main-catalog__slider-link">
                     <img src="img/catalog-slider-svg-close.svg" alt="" class="main-catalog__slider-img">
                     <span class="main-catalog__slider-text">Оборудование для раздачи готовых блюд</span>
                   </a>
                 </li>
-                <li class="main-catalog__slider-item swiper-slide">
+                <li class="main-catalog__slider-item">
                   <a class="main-catalog__slider-link">
                     <img src="img/catalog-slider-svg-close.svg" alt="" class="main-catalog__slider-img">
                     <span class="main-catalog__slider-text">Тепловое оборудование</span>
                   </a>
                 </li>
-                <li class="main-catalog__slider-item swiper-slide">
+                <li class="main-catalog__slider-item">
                   <a class="main-catalog__slider-link">
                     <img src="img/catalog-slider-svg-close.svg" alt="" class="main-catalog__slider-img">
                     <span class="main-catalog__slider-text">Упаковочное оборудование</span>
                   </a>
                 </li>
-                <li class="main-catalog__slider-item swiper-slide">
+                <li class="main-catalog__slider-item">
                   <a class="main-catalog__slider-link">
                     <img src="img/catalog-slider-svg-close.svg" alt="" class="main-catalog__slider-img">
                     <span class="main-catalog__slider-text">Электромеханическое оборудование</span>
@@ -349,62 +366,60 @@
           </div>
           <div class="main-catalog__bottom">
             <div class="main-catalog__bottom-left">
-              <div class="main-catalog__bottom-menu-idk main-catalog__bottom-menu-idk_first">
+                <div class="main-catalog__bottom-menu-idk main-catalog__bottom-menu-idk_first">
                   <ul class="main-catalog__bottom-menu">
                     <li class="main-catalog__bottom-item">Производитель: 
-                      <ul class="main-catalog_selectric" multiple>
-                        <li class="main-catalog__bottom-dropmenu-item main-catalog__bottom_all">
+                      <select class="main-catalog_selectric" multiple>
+                        <option class="main-catalog__bottom-dropmenu-item main-catalog__bottom_all">
                           <a class="main-catalog__bottom-dropmenu-link">Все</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
+                        </option>
+                        <option class="main-catalog__bottom-dropmenu-item">
                           <a class="main-catalog__bottom-dropmenu-link">LG</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
+                        </option>
+                        <option class="main-catalog__bottom-dropmenu-item">
                           <a class="main-catalog__bottom-dropmenu-link">Lenovo</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
+                        </option>
+                        <option class="main-catalog__bottom-dropmenu-item">
                           <a class="main-catalog__bottom-dropmenu-link">Lenovo</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
+                        </option>
+                        <option class="main-catalog__bottom-dropmenu-item">
                           <a class="main-catalog__bottom-dropmenu-link">Lenovo</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
+                        </option>
+                        <option class="main-catalog__bottom-dropmenu-item">
                           <a class="main-catalog__bottom-dropmenu-link">Lenovo</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
+                        </option>
+                        <option class="main-catalog__bottom-dropmenu-item">
                           <a class="main-catalog__bottom-dropmenu-link">Lenovo</a>
-                        </li>
-                      </ul>
-                    <img src="img/catalog-bottom-svg-1.svg" alt="">
+                        </option>
+                      </select>
+                      <div class="main-catalog_select-img">
+                        <img src="img/catalog-bottom-svg-1.svg" alt="" class="main-catalog__select-img-close-1">
+                        <img src="img/close.svg" alt="" class="main-catalog__select-img-close">
+                      </div>
                     </li>
                   </ul>
                 </div>
-                <div class="main-catalog__bottom-menu-idk">
+                <div class="main-catalog__bottom-menu-idk main-catalog__bottom-menu-idk_second">
                   <ul class="main-catalog__bottom-menu">
                     <li class="main-catalog__bottom-item">Сортировать: 
                       <ul class="main-catalog_selectric">
-                        <li class="main-catalog__bottom-dropmenu-item">
-                          <a class="main-catalog__bottom-dropmenu-link">По цене</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
-                          <a class="main-catalog__bottom-dropmenu-link">По убыванию цены</a>
-                        </li>
-                        <li class="main-catalog__bottom-dropmenu-item">
-                          <a class="main-catalog__bottom-dropmenu-link">По возрастанию цены</a>
-                        </li>                     
+                        <a class="main-catalog__bottom-dropmenu-item">
+                          По цене
+                        </a>
+                        <a class="main-catalog__bottom-dropmenu-item">
+                          По убыванию цены
+                        </a>
+                        <a class="main-catalog__bottom-dropmenu-item">
+                          По возрастанию цены
+                        </a>                     
                       </ul>
-                    <img src="img/catalog-bottom-svg-2.svg" alt="">
+                    <img src="img/catalog-bottom-svg-2.svg" alt="" class="selectric-img-rotate">
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="main-catalog__bottom-right">
-              <p class="main-catalog__bottom-text">Найдено 130 товаров</p>
-            </div>
-            <div class="main-catalog__choose">
-              <div class="main-catalog__choose-list">
-                
+              <div class="main-catalog__bottom-right">
+                <p class="main-catalog__bottom-text">Найдено 130 товаров</p>
               </div>
             </div>
           </div>
@@ -633,7 +648,8 @@
         </div>
       </div>
     </div>
-    <script src="js/vendor/jquery.selectric.min.js"></script>
+    <script src="js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="js/vendor/jquery.selectric.js"></script>
     <script src="js/vendor/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
